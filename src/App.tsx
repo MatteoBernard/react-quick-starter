@@ -1,8 +1,12 @@
 import React from 'react';
+import {HashRouter} from "react-router-dom";
+import RootNavigation from "./routing/RootNavigation";
 
 export const App = () => {
     return (
-        <h1>React Quick Starter</h1>
+        <HashRouter>
+            <RootNavigation />
+        </HashRouter>
     );
 }
 
