@@ -7,6 +7,9 @@ export const App = () => {
 
     const { t } = useTranslation();
 
+    const exampleApiUrl = process.env.REACT_APP_API_URL;
+    console.log(`API URL: ${exampleApiUrl}`);
+
     return (
         <HashRouter>
             <h1>{t("hello")}</h1>
